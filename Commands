@@ -1,0 +1,4 @@
+make search && make run && ./search.out
+make search && make run && ./sort.out
+
+g++ -std=c++14 *.cpp -o sort.out

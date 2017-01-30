@@ -2,6 +2,7 @@
 #include <cstdlib>//for "exit()" on some systems
 #include <vector>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -14,7 +15,17 @@ using namespace std;
 */
 
 //auto linearSearch...
+int linearSearch(vector<string> A, string key) { 
+	for(int i = 0; i < A.size(); i ++) { 
+	
+		if (A[i] == key){ 
+			return i;
 
+				}
+		
+	}
+		return -1;
+}
 
 int main()
 {
@@ -22,15 +33,18 @@ int main()
   string search_key, input;
   int result;
 
+ifstream infile {"top1Mweb"};
+
    cout<<"Welcome to \"search it\". We first need some input data."<<endl;
    cout<<"We'll assume the inputs do not have any spaces."<<endl;
    cout<<"\nTo end input type Ctrl + D"<<endl<<endl;
 
-    while(cin>>input)//read an unknown number of inputs
+    while(infile>>input)//read an unknown number of inputs
     {
        inputs.push_back(input);
     }
 
+	cout << inputs[0] << endl;
    cout<<endl<<"["<<inputs.size()<<" values read from input source]"<<endl<<endl;
 
   if(inputs.size() == 0)//no input
