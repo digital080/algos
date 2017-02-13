@@ -1,6 +1,6 @@
 
 
-**Time left**   |  00 Hrs: ?? Min
-  **Algorithm**   |   selection sort
-  **Expected passes** | 99999
-  **Observed passes** | ????
+**Time left**   |  02Hr(s):  12 Min (To complete)
+  **Algorithm**   |   Selection Sort
+  **Expected passes** | 999999
+  **Observed passes** | 999999
