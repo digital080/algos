@@ -20,24 +20,27 @@ int selectionSort(vector <string> data){ //selection sort
 	string holder = "";
 	int smallest = 0;
 	
+
 	
-	
-	for (int x = 0; x <= data.size(); x++){
+	for (int x = 0; x < data.size(); x++){
 			smallest = x;
-		for (int i = x+1; i <= data.size(); i++){
+			
+			cout << "Number of Passes: " << x << endl;
+			
+		for (int i = x+1; i < data.size(); i++){
 				if (data[smallest] > data[i]){
 				
 					swap(data[smallest], data[i]);
 					}
 					
 		}
-		cout << data[x] << endl;
+		//cout << data[x] << endl;
 	}
-	
-	/*for(int w = 0; w <= data.size(); w++){
+
+	for(int w = 0; w <= data.size(); w++){
 	cout << data[w] << endl;
 }
- */
+ 
 	}
 
 
